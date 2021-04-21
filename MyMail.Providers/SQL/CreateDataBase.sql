@@ -1,0 +1,7 @@
+﻿IF NOT EXISTS(SELECT * FROM sys.databases WHERE name = 'myMail')
+  BEGIN
+    CREATE DATABASE myMail;
+	SELECT 1;
+  END
+ELSE
+	SELECT 0;

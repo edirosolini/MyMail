@@ -1,0 +1,44 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:20941",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SIGNING_KEY": "1234567890abcdefghijk",
+        "SMTP_HOST": "smtp.example.com",
+        "SMTP_PORT": "25",
+        "MAIL_SECURE": "false",
+        "MAIL_USERNAME": "6b592f9f09df0ecea6746e633e470e70",
+        "MAIL_PASSWORD": "063176292a30660c86cc36b7d0736f85",
+        "MAIL_FROM": "user@example.com"
+      }
+    },
+    "MyMail.Web": {
+      "commandName": "Project",
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SIGNING_KEY": "1234567890abcdefghijk",
+        "SMTP_HOST": "smtp.example.com",
+        "SMTP_PORT": "25",
+        "MAIL_SECURE": "false",
+        "MAIL_USERNAME": "6b592f9f09df0ecea6746e633e470e70",
+        "MAIL_PASSWORD": "063176292a30660c86cc36b7d0736f85",
+        "MAIL_FROM": "user@example.com"
+      },
+      "dotnetRunMessages": "true",
+      "applicationUrl": "http://localhost:5000"
+    }
+  }
+}

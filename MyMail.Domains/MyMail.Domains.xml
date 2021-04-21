@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyMail.Domains</name>
+    </assembly>
+    <members>
+        <member name="F:MyMail.Domains.Enums.TypeActionEnum.Basic">
+            <summary>
+            Represents a button basic.
+            </summary>
+        </member>
+        <member name="F:MyMail.Domains.Enums.TypeActionEnum.Positive">
+            <summary>
+            Represents a button positive.
+            </summary>
+        </member>
+        <member name="F:MyMail.Domains.Enums.TypeActionEnum.Negative">
+            <summary>
+            Represents a button negative.
+            </summary>
+        </member>
+    </members>
+</doc>
