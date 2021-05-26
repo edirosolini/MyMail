@@ -2,9 +2,9 @@
 // Copyright (c) El Roso. All rights reserved.
 // </copyright>
 
-namespace MyMail.Web.Controllers
+namespace MyMail.WebApplication.Controllers
 {
-    using log4net;
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using MyMail.Domains.Requests;
     using MyMail.Domains.Responses;
@@ -12,6 +12,7 @@ namespace MyMail.Web.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class MailController : ControllerBase
     {
         private readonly IMailService service;

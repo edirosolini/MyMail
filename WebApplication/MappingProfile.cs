@@ -2,7 +2,7 @@
 // Copyright (c) El Roso. All rights reserved.
 // </copyright>
 
-namespace MyMail.Web
+namespace MyMail.WebApplication
 {
     using AutoMapper;
 

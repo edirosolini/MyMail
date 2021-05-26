@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>netstandard2.1</TargetFramework>
+		<TargetFramework>net5.0</TargetFramework>
 		<Authors>Ezequiel Di Rosolini</Authors>
 		<Company>El Roso</Company>
 		<DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
@@ -18,24 +18,24 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Include="MailFormat.html" />
+		<EmbeddedResource Include="MailFormat.html" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="AutoMapper" Version="10.1.1" />
 		<PackageReference Include="ClosedXML" Version="0.95.4" />
 		<PackageReference Include="log4net" Version="2.0.12" />
-		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.8.0" />
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.11.1" />
 		<PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.11.1" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\MyMail.Commons\MyMail.Commons.csproj" />
-		<ProjectReference Include="..\MyMail.Domains\MyMail.Domains.csproj" />
+		<ProjectReference Include="..\Commons\MyMail.Commons.csproj" />
+		<ProjectReference Include="..\Domains\MyMail.Domains.csproj" />
 	</ItemGroup>
 
 </Project>

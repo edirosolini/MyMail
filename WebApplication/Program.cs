@@ -2,10 +2,11 @@
 // Copyright (c) El Roso. All rights reserved.
 // </copyright>
 
-namespace MyMail.Web
+namespace MyMail.WebApplication
 {
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.Hosting;
+    using Microsoft.Extensions.Logging;
 
     public class Program
     {
@@ -19,6 +20,10 @@ namespace MyMail.Web
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                })
+                .ConfigureLogging((hostingContext, logging) =>
+                {
+                    logging.AddLog4Net();
                 });
     }
 }

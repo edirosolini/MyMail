@@ -2,7 +2,7 @@
 // Copyright (c) El Roso. All rights reserved.
 // </copyright>
 
-namespace MyMail.Web
+namespace MyMail.WebApplication
 {
     using System;
     using System.Collections.Generic;
@@ -19,11 +19,9 @@ namespace MyMail.Web
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Tokens;
     using Microsoft.OpenApi.Models;
-    using MyMail.Domains.Providers;
     using MyMail.Domains.Services;
-    using MyMail.Providers;
     using MyMail.Services;
-    using MyMail.Web.Middlewares;
+    using MyMail.WebApplication.Middlewares;
 
     public class Startup
     {
@@ -107,11 +105,6 @@ namespace MyMail.Web
             {
                 m.AddProfile(new MappingProfile());
             }).CreateMapper());
-
-            IInitialCatalog initialCatalog = new InitialCatalog(this.Configuration);
-            if (initialCatalog.Create())
-            {
-            }
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -130,7 +123,7 @@ namespace MyMail.Web
             }
 
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint($"/swagger/v1/swagger.json", $"API Docs"));
+            app.UseSwaggerUI(c => c.SwaggerEndpoint($"v1/swagger.json", $"API Docs"));
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

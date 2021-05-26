@@ -4,18 +4,19 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:20941",
+      "applicationUrl": "http://localhost:7000",
       "sslPort": 0
     }
   },
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "SIGNING_KEY": "1234567890abcdefghijk",
+        "SIGNING_KEY": "StrONGKAutHENTICATIONKEy",
+        "CONNECTION_STRING": "Data Source=(local);Initial Catalog=MyMail;User ID=sa;Password=123@Password",
         "SMTP_HOST": "smtp.example.com",
         "SMTP_PORT": "25",
         "MAIL_SECURE": "false",
@@ -26,10 +27,12 @@
     },
     "MyMail.Web": {
       "commandName": "Project",
+      "launchBrowser": false,
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "SIGNING_KEY": "1234567890abcdefghijk",
+        "SIGNING_KEY": "StrONGKAutHENTICATIONKEy",
+        "CONNECTION_STRING": "Data Source=(local);Initial Catalog=MyMail;User ID=sa;Password=123@Password",
         "SMTP_HOST": "smtp.example.com",
         "SMTP_PORT": "25",
         "MAIL_SECURE": "false",
@@ -38,7 +41,7 @@
         "MAIL_FROM": "user@example.com"
       },
       "dotnetRunMessages": "true",
-      "applicationUrl": "http://localhost:5000"
+      "applicationUrl": "http://localhost:7000"
     }
   }
 }

@@ -2,7 +2,7 @@
 // Copyright (c) El Roso. All rights reserved.
 // </copyright>
 
-namespace MyMail.Web.Middlewares
+namespace MyMail.WebApplication.Middlewares
 {
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Diagnostics;

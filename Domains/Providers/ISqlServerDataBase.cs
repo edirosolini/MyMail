@@ -8,8 +8,8 @@ namespace MyMail.Domains.Providers
 
     public interface ISqlServerDataBase
     {
-        string GetQuery(string nameFile);
+        SqlConnection GetSqlConnection();
 
-        SqlConnection GetDatabaseConnection();
+        string GetQuery(string nameFile);
     }
 }

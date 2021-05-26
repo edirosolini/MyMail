@@ -11,20 +11,20 @@ namespace MyMail.Domains.Providers
     public interface IRepository<T>
         where T : BaseEntity
     {
-        bool Delete(T entity);
+        long Insert(T entity);
 
-        bool DeleteList(IEnumerable<T> entity);
+        long InsertList(IEnumerable<T> entity);
+
+        T Get(Guid id);
+
+        IEnumerable<T> GetList();
 
         bool Update(T entity);
 
         bool UpdateList(IEnumerable<T> entity);
 
-        IEnumerable<T> GetList();
+        bool Delete(T entity);
 
-        int Insert(T entity);
-
-        int InsertList(IEnumerable<T> entity);
-
-        T GetById(Guid id);
+        bool DeleteList(IEnumerable<T> entity);
     }
 }
